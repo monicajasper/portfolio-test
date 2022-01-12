@@ -8,6 +8,7 @@ Use CSS Grid
 /*variables*/
 --color-purple: #8803fc;
 --color-teal: #03A9FC;
+--color-dkblue: #004F97;
 --color-gray: #CCC;
 --font-header: "Josefin Sans", sans-serif;
 /*--font-content: "Raleway", sans-serif;*/
@@ -17,7 +18,7 @@ Use CSS Grid
 {
   margin: 0; /*handles 100% width problem in welcome-section*/
   padding: 0;
-  box-sizing: inherit;*/
+  box-sizing: inherit;
 }
 
 html
@@ -43,7 +44,8 @@ body
   padding: 1em 2em;
   font-family: var(--font-header);
   font-size: 1.2em;
-  background-color: var(--color-teal);
+  /*background-color: var(--color-teal);*/
+  background: linear-gradient(170deg, var(--color-teal) 60%, var(--color-dkblue));
   box-shadow: 1px 2px 2px rgba(50, 50, 50, 0.5);
 }
 
@@ -52,7 +54,7 @@ nav li
   display: inline;
   text-transform: uppercase;
   padding: 1em;
-  font-color: black;
+  font: black;
 }
 
 a
@@ -64,7 +66,7 @@ a
 a:visited, .project-name:visited
 {
   text-decoration: none;
-  font-color: black;  
+  font: black;  
 }
 
 a:hover, .project-tile .project-name:hover
@@ -135,7 +137,7 @@ h2
   margin: auto auto;
   background-color: var(--color-purple);
   font-family: var(--font-header);
-  font-color: black;
+  font: black;
   box-shadow: 1px 1px 2px rgba(100, 100, 100, 0.8);
   border: solid black 0.5px;
   border-radius: 10px;
